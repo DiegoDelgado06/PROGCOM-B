@@ -1,0 +1,325 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMRdYx2fuXmA9JtM3HYqQk3",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/DiegoDelgado06/PROGCOM-B/blob/main/segunda%20parte%20prueba%20diagnostica\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Parte 2: prueba diagnostica Estructuras de Repetición\n"
+      ],
+      "metadata": {
+        "id": "Q8ozKw_EUxJR"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1\tEscribe un programa que imprima los números del 1 al 10"
+      ],
+      "metadata": {
+        "id": "SETSELJrVk1g"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(1, 11):\n",
+        "    print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yL6GiRhDVl9v",
+        "outputId": "b401922e-79e2-4c4d-a1d7-7dcb9fadb836"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "\n",
+        "\n",
+        "2\tEscribe un programa que sume los números del 1 al 100.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "74sP8AJqVq5f"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "suma = 0\n",
+        "for i in range(1, 101):\n",
+        "    suma += i\n",
+        "print(\"La suma del 1 al 100 es\", suma)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1KF5BKAcWvTn",
+        "outputId": "0ff5c733-265c-4b25-eb7c-2dcc81851474"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "La suma del 1 al 100 es 5050\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3\tEscribe un programa que imprima los múltiplos de 3 entre 1 y 30."
+      ],
+      "metadata": {
+        "id": "9LESRoZfWM-I"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Los multiplos de 3 entre 1 y 30 son:\")\n",
+        "for i in range(1,31):\n",
+        "  if i % 3 == 0:\n",
+        "    print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CRJ1QgQMW3g_",
+        "outputId": "3f666cc3-45d3-4ae0-b588-b41682870cdf"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Los multiplos de 3 entre 1 y 30 son:\n",
+            "3\n",
+            "6\n",
+            "9\n",
+            "12\n",
+            "15\n",
+            "18\n",
+            "21\n",
+            "24\n",
+            "27\n",
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "4\tEscribe un programa que lea un número e imprima su tabla de multiplicar del 1 al 10."
+      ],
+      "metadata": {
+        "id": "AKu3_ri_Yiy_"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"tabla de multiplicar del 1 al 10\")\n",
+        "numero = int(input(\"Ingrese un numero:\"))\n",
+        "for i in range(1,11):\n",
+        "  print (numero, \"x\", i, \"=\", numero*i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SnmF-x0SYmKu",
+        "outputId": "40353635-c539-40eb-c7eb-6921f641e353"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "tabla de multiplicar del 1 al 10\n",
+            "Ingrese un numero:12\n",
+            "12 x 1 = 12\n",
+            "12 x 2 = 24\n",
+            "12 x 3 = 36\n",
+            "12 x 4 = 48\n",
+            "12 x 5 = 60\n",
+            "12 x 6 = 72\n",
+            "12 x 7 = 84\n",
+            "12 x 8 = 96\n",
+            "12 x 9 = 108\n",
+            "12 x 10 = 120\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "5\tEscribe un programa que pida 5 números al usuario y calcule el promedio."
+      ],
+      "metadata": {
+        "id": "Dq6RroHXaL9l"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Ingrese 5 numeros\")\n",
+        "suma = 0\n",
+        "for i in range(5):\n",
+        "  numero = int(input(\"Ingrese un numero:\"))\n",
+        "  suma += numero\n",
+        "print(\"El promedio de los 5 numeros es:\", suma/5)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kUUn9KyVaOH1",
+        "outputId": "d2460585-006b-4bb3-fef7-65acbade5d8f"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese 5 numeros\n",
+            "Ingrese un numero:1\n",
+            "Ingrese un numero:2\n",
+            "Ingrese un numero:3\n",
+            "Ingrese un numero:4\n",
+            "Ingrese un numero:5\n",
+            "El promedio de los 5 numeros es: 3.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "6\tEscribe un programa que cuente cuántos números pares hay entre 1 y un número ingresado."
+      ],
+      "metadata": {
+        "id": "byqkFN3mbSX8"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Ingrese un numero\")\n",
+        "numero = int(input(\"Ingrese un numero:\"))\n",
+        "contador = 0\n",
+        "for i in range(1, numero+1):\n",
+        "  if i % 2 == 0:\n",
+        "    contador += 1\n",
+        "    print(i)\n",
+        "print(\"hay\", contador, \"numero pares entre 1 y\", numero)"
+      ],
+      "metadata": {
+        "id": "FZ2QUx8Abdck"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "7\tEscribe un programa que solicite contraseñas hasta que el usuario ingrese una válida, formada por su apellido y la longitud de su apellido (“Espinosa8”, por ejemplo)."
+      ],
+      "metadata": {
+        "id": "1_-mHQvlcZ9T"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Ingrese su apellido y la longitud de su apellido\")\n",
+        "apellido = input(\"Ingrese su apellido:\")\n",
+        "Longitud = len(apellido)\n",
+        "while True:\n",
+        " contraseña = input(\"Ingrese una contraseña:\")\n",
+        "if contraseña == apellido +str(Longitud):\n",
+        "    print(\"Contraseña valida\")\n",
+        "    break\n",
+        "else:\n",
+        "  print(\"Contraseña invalida\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EzMnKEcccdTs",
+        "outputId": "473a1581-57be-408a-d293-417fd470bf0f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Ingrese su apellido y la longitud de su apellido\n",
+            "Ingrese su apellido:delgado\n",
+            "Ingrese una contraseña:462\n",
+            "Ingrese una contraseña:462\n",
+            "Ingrese una contraseña:462\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
